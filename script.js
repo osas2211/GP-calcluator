@@ -38,6 +38,7 @@ calc.addEventListener("submit", function(e){
         if (i.value === ""){
             all_credit = 0
             alert(`A Credit Field Missing Calculated GP might be Incorrect`);
+            break;
         }
         else{
             all_credit.push(Number(i.value));
@@ -49,7 +50,8 @@ calc.addEventListener("submit", function(e){
         
         if (i.value === ""){
             all_grade = 0;
-            alert(`A Grade field Missing Calculated GP might be Incorrect`)
+            alert(`A Grade field Missing Calculated GP might be Incorrect`);
+            break;
         }
         else {
             if (i.value === "A" || i.value === "a"){
