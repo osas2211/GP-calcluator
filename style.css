@@ -144,6 +144,7 @@ body{
     .gp-section{
         width: 80%;
         right: 10%;
+        height: 55vh;
     }
     #course-number input{
         width: 50%;
