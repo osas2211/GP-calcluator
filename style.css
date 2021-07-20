@@ -48,7 +48,7 @@ body{
     background-color: #ffffff;
     width: 60%;
     margin: auto;
-    height: 70vh;
+    height: 65vh;
     color: rgba(42, 79, 88, 0.795);
     box-shadow: 3px 10px 25px rgba(20, 37, 41, 0.932);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
