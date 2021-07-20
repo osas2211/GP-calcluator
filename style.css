@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+:root{
+    --theme-white:#F3EFF5;
+    --theme-blue-light: rgb(64, 213, 250);
+    --theme-blue-dark: rgb(10, 124, 153);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: "Lato",Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.main{
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(to right bottom, var(--theme-blue-dark), var(--theme-blue-light));
+    background-size: cover;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 50vh);
+    box-shadow: 2px 15px 20px #000;
+    color: var(--theme-white);
+    text-align: center;
+    line-height: 1.7;
+}
+
+.main h1{
+    padding-top: 3rem;
+    font-weight: 400;
+}
+
+.main p{
+    font-size: 0.8rem;
+}
+
+.gp-section{
+    position: absolute;
+    z-index: 12;
+    top: 25%;
+    right: 19%;
+    background-color: #ffffff;
+    width: 60%;
+    margin: auto;
+    height: 70vh;
+    color: rgba(42, 79, 88, 0.795);
+    box-shadow: 3px 10px 25px rgba(20, 37, 41, 0.932);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    text-align: center;
+    
+}
+
+.gp-section footer{
+    background-color: var(--theme-blue-light);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    color: var(--theme-white);
+}
+
+#course-number{
+    /*display: flex;*/
+    display: flex;
+    padding: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#course-number input{
+    margin-top: 1rem;
+    width: 30%;
+    padding: 0.8rem;
+    outline: none;
+    
+}
+
+#calculator{
+    /*display: flex;*/
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.wrapper label{
+    margin-bottom: 1rem;
+}
+
+.course-credit,.grades{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+}
+
+#credit, #grade{
+    padding: 2px;
+    width: 4rem;
+    margin: 4px;
+    outline: none;
+}
+
+#submit-grades{
+    padding: 0.8rem;
+}
+
+.gp-grade{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.gp-grade span{
+    color: var(--theme-blue-dark);
+}
+
+.gp-grade a{
+    text-decoration: none;
+    display: block;
+    font-size: 0.8rem;
+    color: var(--theme-blue-dark);
+    margin-top: 4rem;
+}
+
+@media (max-width:600px) {
+    .gp-section{
+        width: 80%;
+        right: 10%;
+    }
+    #course-number input{
+        width: 50%;
+    }
+    #credit, #grade{
+        padding: 4px;
+        width: 5rem;
+    }
+}
