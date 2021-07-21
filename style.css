@@ -1,7 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
+@keyframes moveInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(150%);
+    }
 
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
 
+.animate{
+    animation: moveInUp ease-out;
+    animation-duration: 1s;
+}
+.animate1{
+    animation-delay: 200ms;
+}
+
+.animate2{
+    animation-delay: 500ms;
+}
+
+.animate3{
+    animation-delay: 900ms;
+}
 :root{
     --theme-white:#F3EFF5;
     --theme-blue-light: rgb(64, 213, 250);
@@ -83,6 +108,7 @@ body{
     width: 30%;
     padding: 0.8rem;
     outline: none;
+    backface-visibility: hidden;
     
 }
 

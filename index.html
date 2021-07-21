@@ -13,27 +13,30 @@
         <h1>GPA Calculator</h1>
         <p>Calculate your semester GP with a GPA scale of 5.0</p>
     </div>
-    <div class="gp-section">
-        <form id="course-number">
-            <label>Enter Number of Courses</label>
-            <input type="number" name="number" id="num">
-            <input type="submit" value="Submit" id="submit-num">
-        </form>
-        <form id="calculator">
-            <div class="wrapper">
-                <div class="course-credit">
-                    <label>Enter Course Credit</label>
+    <div>
+        <div class="gp-section">
+            <form id="course-number">
+                <label class="animate animate1">Enter Number of Courses</label>
+                <input type="number" name="number" id="num" class="animate animate2">
+                <input type="submit" value="Submit" id="submit-num" class="animate animate3">
+            </form>
+            <form id="calculator">
+                <div class="wrapper">
+                    <div class="course-credit">
+                        <label>Enter Course Credit</label>
+                    </div>
+                    <div class="grades">
+                        <label>Enter Course Grade </label>
+                    </div>
                 </div>
-                <div class="grades">
-                    <label>Enter Course Grade </label>
-                </div>
-            </div>
-            <input type="submit" value="Submit" id="submit-grades">
-            <div class="gp-grade"></div>
-        </form>
-        <footer>
-            Developed by Osariemen Osaretin Frank &copy; 2021
-        </footer>
+                <input type="submit" value="Submit" id="submit-grades">
+                <div class="gp-grade"></div>
+            </form>
+            <footer>
+                Developed by Osariemen Osaretin Frank &copy; 2021
+            </footer>
+    </div>
+    
     </div>
     <script src="script.js"></script>
 </body>
