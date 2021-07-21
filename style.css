@@ -27,6 +27,7 @@ body{
     position: relative;
     font-family: "Lato",Arial, Helvetica, sans-serif;
     padding: 20px;
+    backface-visibility: hidden;
 }
 
 .main{
