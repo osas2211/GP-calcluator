@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
-@keyframes moveInUp{
-    0%{
-        opacity: 0;
-        transform: translate(50%, 0);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(50%, -50%);
-    }
-}
+
 
 :root{
     --theme-white:#F3EFF5;
@@ -55,9 +46,8 @@ body{
 .gp-section{
     position: absolute;
     z-index: 12;
-    top: 55%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    top: 25%;
+    right: 19%;
     background-color: #ffffff;
     width: 60%;
     margin: auto;
@@ -66,9 +56,7 @@ body{
     box-shadow: 3px 10px 25px rgba(20, 37, 41, 0.932);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     text-align: center;
-    animation-name: moveInUp;
-    animation-duration: 600ms;
-    animation-timing-function: ease-out;
+
 }
 
 .gp-section footer{
@@ -158,6 +146,7 @@ body{
 @media (max-width:600px) {
     .gp-section{
         width: 80%;
+        right: 10%;
         height: 58vh;
     }
     #course-number input{
