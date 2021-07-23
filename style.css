@@ -15,6 +15,7 @@
 .animate{
     animation: moveInUp ease-out;
     animation-duration: 1s;
+    animation-fill-mode: backwards;
 }
 .animate1{
     animation-delay: 200ms;
